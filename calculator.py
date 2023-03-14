@@ -6,7 +6,7 @@ while True:
         print("Valor inválido: digite apenas valores numéricos inteiros ou decimais com .")
         continue
     op = input("Digite a operação que deseja realizar:\n")
-    if op not in '+-*Xx/%':
+    if op not in '+-*x/%':
         print('Operação inválida, digite apenas os operadores +, -, *, /, ou ainda x e % para multiplicação e divisão.\n')
         continue
     try:
@@ -20,7 +20,5 @@ while True:
         print("A subtração de {} com {} é {}." .format(a,b,a-b))
     elif op == '*' or op == 'x':
         print("A multiplicação de {} por {} é {}." .format(a,b,a*b))
-    elif op == '/' or op == '%':
-        print("A divisão de {} por {} é {}." .format(a,b,a/b))
     else:
-        print("Operação inválida.\n")
+        print("A divisão de {} por {} é {}." .format(a,b,a/b))
